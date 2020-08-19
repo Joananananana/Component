@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+}
+body{
+    height: 100%;
+    background-color: #93b3c6;
+}
+span{
+    display: block;
+    width: 16px;
+    height:16px;
+    margin:30px auto 40px;
+    border-radius: 50%;
+    background:#fff;
+}
+nav{
+    position: relative;
+    display: flex;
+    width:78.125vw;
+    margin:0 auto 45px;
+    justify-content: space-between; 
+    /* display:flex 和 justify-content: space-between结合可以使元素在容器中左右均匀分布*/
+}
+nav:before{
+    position: absolute;
+    top:20px;
+    width: 95%;
+    height: 10px;
+    background-color: #fff;
+    display: block;
+    content:'';
+}
+nav a{
+    position: relative;
+    font-size: 10px;
+    padding:10px;
+    border:2px solid #5395b4;
+    text-decoration:none;
+    background-color:#fff;
+}
+div{
+    position: relative;
+    width:78.125vw;
+    height:77vh;
+    margin:0 auto;
+    background: #fff;
+    box-shadow: 0 0 30px 0 rgba(8,1,3,0.3);
+    overflow: hidden;
+}
+div>img{
+    position: absolute;
+    width: 98%;
+    height:96%;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+}

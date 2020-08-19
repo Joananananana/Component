@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#333;
+}
+.register{
+    width: 300px;
+    height: 270px;
+    margin: 80px auto;
+    padding:15px 30px;
+    background:#eee;
+    border-radius:5px;
+}
+.title{
+    height:35px;
+}
+.title span{
+    font-size:16px;
+    font-weight:bold;
+    color:#666;
+    margin-right: 30px;
+    cursor: pointer;       
+    /* 鼠标指针放在一个元素边界范围内时所用的光标形状 */
+}
+.title span.current{
+    color: blueviolet;
+}
+.form div{
+    width: 290px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding:8px 10px;
+    position: relative;
+}
+.form div span{
+    display: inline-block;
+    padding-top: 8px;
+    padding-right: 3px;
+    color:#666;
+}
+.form div input{
+    border:none;
+    outline:none;
+    font-size: 17px;
+    color:#666;
+    background: none;
+}
+.form div i{
+    width: 16px;
+    height:16px;
+    position: absolute;
+    right: 14px;
+    bottom:14px;
+}
+.form div i.ok{
+    background:url(../img/sun.png) no-repeat ;
+    background-size:cover;
+    /* 图片等比例缩小显示 而不是只显示其中一部分 */
+}
+.form div i.no{
+    background:url(../img/rain.png) no-repeat;
+    background-size:cover;
+}
+.form .info{
+    margin-top: 14px;
+    color:#f00;
+    padding-left: 2px;
+}
+
+.btn{
+    display: block;
+    width: 310px;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    background-color: burlywood;
+    color:#fff;
+    border-radius: 15px;
+    font-size: 16px;
+}
