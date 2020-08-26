@@ -23,25 +23,25 @@ window.onload = function () {
         } else {
             userInfo.innerHTML = ''
             userIcon.className = 'ok'
-            //发起请求
-            // $.ajax({
-            //     url:"http://127.0.0.1:5500/Jquery//isUserRepeat.php",
-            //     data:{username:userVal},
-            //     success:function(data){
-            //         console.log(data.msg)
-            //         // if(data.code==1){
-            //         //     userIcon.className='ok'
-            //         //     isRepeat=false
-            //         // }else if(data.code==0){
-            //         //     userIcon.className='no'
-            //         //     userInfo.innerHTML=data.msg
-            //         //     isRepeat=true
-            //         // }else{
-            //         //     userInfo.innerHTML='检测失败，请重试。'
-            //         // }
+            发起请求
+            $.ajax({
+                url:"http://127.0.0.1:5500/Jquery//isUserRepeat.php",
+                data:{username:userVal},
+                success:function(data){
+                    console.log(data.msg)
+                    if(data.code==1){
+                        userIcon.className='ok'
+                        isRepeat=false
+                    }else if(data.code==0){
+                        userIcon.className='no'
+                        userInfo.innerHTML=data.msg
+                        isRepeat=true
+                    }else{
+                        userInfo.innerHTML='检测失败，请重试。'
+                    }
                     
-            //     }
-            // })
+                }
+            })
         }
     }
     //检测密码
